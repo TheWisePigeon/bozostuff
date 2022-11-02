@@ -1,24 +1,29 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "13.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.11.8",
-    "@types/react": "18.0.24",
-    "@types/react-dom": "18.0.8",
-    "eslint": "8.26.0",
-    "eslint-config-next": "13.0.0",
-    "typescript": "4.8.4"
-  }
+	"name": "bozostuff",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"autoprefixer": "^10.4.13",
+		"postcss": "^8.4.18",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.7",
+		"tailwindcss": "^3.2.1",
+		"tslib": "^2.3.1",
+		"typescript": "^4.7.4",
+		"vite": "^3.1.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"firebase": "^9.13.0"
+	}
 }
